@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Explore Hyderabad</title>
+  <link rel="stylesheet" href="./Travel.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 text-white font-sans scroll-smooth">
+<!-- LOADER -->
+
+<div
+  id="loader"
+  class="fixed inset-0 bg-black flex items-center justify-center z-[9999]">
+
+  <div class="text-center">
+
+    <h1 class="text-5xl font-bold text-amber-400 glow-text mb-6">
+
+      Explore Hyderabad
+
+    </h1>
+
+    <div class="w-64 h-2 bg-zinc-800 rounded-full overflow-hidden">
+
+      <div
+        class="h-full bg-gradient-to-r from-amber-400 to-orange-500 animate-pulse">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+  <!-- Navbar -->
+   <button
+  id="themeToggle"
+  class="bg-zinc-800 text-white px-5 py-3 rounded-xl hover:bg-zinc-700 transition">
+
+  🌙
+
+</button>
+ <nav class="fixed top-0 left-0 w-full bg-black/30 backdrop-blur-2xl border-b border-white/10 z-50"></nav>
+
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+      <h1 class="text-3xl font-bold text-amber-400">
+        Explore Hyderabad
+      </h1>
+
+      <div class="hidden md:flex gap-8 text-gray-200 font-medium">
+
+       <a href="#home" class="nav-link transition">
+  Home
+</a>
+<a href="#destinations" class="nav-link transition">
+  Places
+</a>
+
+       <a href="#about" class="nav-link transition">
+  About
+</a>
+      </div>
+<a href="#contact" class="nav-link transition">
+  Contact
+</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section
+    id="home"
+    class="h-screen flex items-center bg-cover bg-center relative"
+    style="background-image:url('https://t4.ftcdn.net/jpg/18/74/00/79/360_F_1874007994_ZIOfKyWJKDrDFU7o9e3wvpwuZYgQj3sk.jpg');">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-zinc-900/70 to-indigo-950/70"></div>
+
+    <div class="relative z-10 max-w-5xl px-6">
+
+      <h2 class="text-7xl font-bold leading-tight mb-6">
+        Discover The
+        <br />
+        <span class="bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-500 bg-clip-text text-transparent glow-text"></span>
+          Beauty Of Hyderabad
+        </span>
+      </h2>
+
+      <p class="text-xl text-gray-300 leading-8 mb-10 max-w-3xl">
+        Explore Hyderabad's iconic forts, museums, temples,
+        lakes, heritage monuments, and entertainment destinations.
+      </p>
+
+      <div class="flex gap-5 flex-wrap">
+
+        <a
+          href="#destinations"
+          class="bg-gradient-to-r from-amber-400 to-orange-500 text-black px-8 py-4 rounded-2xl text-lg font-bold hover:scale-105 transition">
+
+          Explore Places
+        </a>
+
+        <a
+          href="#about"
+          class="border border-gray-300 hover:bg-white hover:text-black px-8 py-4 rounded-2xl text-lg font-semibold transition">
+
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="py-16 bg-black">
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-6">
+
+      <div data-aos="fade-up"
+  class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8 text-center shadow-2xl">
+        <h3 class="text-5xl font-bold text-amber-400 mb-3">20+</h3>
+        <p class="text-gray-300">Tourist Places</p>
+      </div>
+
+      <div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8 text-center shadow-2xl">
+        <h3 class="text-5xl font-bold text-amber-400 mb-3">1M+</h3>
+        <p class="text-gray-300">Visitors</p>
+      </div>
+
+      <div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl p-8 text-center shadow-2xl">
+        <h3 class="text-5xl font-bold text-amber-400 mb-3">24/7</h3>
+        <p class="text-gray-300">Tour Support</p>
+      </div>
+
+      <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 text-center shadow-2xl">
+        <h3 class="text-5xl font-bold text-amber-400 mb-3">100+</h3>
+        <p class="text-gray-300">City Attractions</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="py-24 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-6xl font-bold mb-5">
+          Famous Places In Hyderabad
+        </h2>
+
+        <p class="text-gray-400 text-xl">
+          Discover Hyderabad's iconic tourist attractions.
+        </p>
+      </div>
+<!-- Search Bar -->
+
+<div class="mb-14 flex justify-center">
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search tourist places..."
+    class="w-full md:w-1/2 bg-zinc-900 border border-zinc-700 text-white px-6 py-4 rounded-2xl outline-none focus:border-amber-400 shadow-2xl"
+  />
+
+</div>
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- CHARMINAR -->
+<div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-4 transition duration-500">
+<div class="relative overflow-hidden">
+
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8SFjbTtOzi4-PqRbwd1EX_SIKbgZmyutNA&s"
+    class="w-full h-72 object-cover"/>
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+</div>
+
+  <div class="p-8">
+
+    <h3 class="text-3xl font-bold text-amber-400 mb-4">
+      Charminar
+    </h3>
+
+    <button
+  onclick="openModal(
+    'Charminar',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8SFjbTtOzi4-PqRbwd1EX_SIKbgZmyutNA&s',
+    'Charminar is one of Hyderabad’s most iconic landmarks built in 1591 by Muhammad Quli Qutb Shah. It represents the rich heritage, culture, architecture, and history of Hyderabad. The surrounding Laad Bazaar is famous for shopping, pearls, and traditional food.',
+    '8:00 AM - 5:30 PM',
+    'Old City, Hyderabad'
+  )"
+
+  class="hero-btn bg-gradient-to-r from-amber-400 to-orange-500 text-black px-6 py-3 rounded-xl font-bold mt-4">
+
+  View Details
+
+</button>
+   
+  </div>
+</div>
+
+        <!-- GOLCONDA -->
+       <!-- GOLCONDA -->
+<div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-4 transition duration-500">
+
+  <div class="relative overflow-hidden">
+
+    <img
+      src="https://s7ap1.scene7.com/is/image/incredibleindia/golconda-fort-hyderabad-secunderabad-telangana-2-musthead-hero?qlt=82&ts=1742182618031"
+      class="w-full h-72 object-cover"/>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+  </div>
+
+  <div class="p-8">
+
+    <h3 class="text-3xl font-bold text-amber-400 mb-4">
+      Golconda Fort
+    </h3>
+
+    <button
+      onclick="openModal(
+        'Golconda Fort',
+        'https://s7ap1.scene7.com/is/image/incredibleindia/golconda-fort-hyderabad-secunderabad-telangana-2-musthead-hero?qlt=82&ts=1742182618031',
+        'Golconda Fort is one of India’s most historic forts known for its advanced acoustic system, royal halls, secret tunnels, watch towers, and panoramic city views. It was once a famous diamond trading center where diamonds like Koh-i-Noor originated.',
+        '9:00 AM - 5:30 PM',
+        'Golconda, Hyderabad'
+      )"
+
+      class="hero-btn bg-gradient-to-r from-amber-400 to-orange-500 text-black px-6 py-3 rounded-xl font-bold mt-4">
+
+      View Details
+
+    </button>
+
+  </div>
+</div>
+
+
+        <!-- TANK BUND -->
+       
+               <!-- TANK BUND -->
+<div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-4 transition duration-500">
+
+  <div class="relative overflow-hidden">
+
+    <img
+      src="https://thumbs.dreamstime.com/b/buddha-statue-situated-tank-bund-which-well-know-tourist-spot-hyderabad-artificial-lake-tankbund-225155727.jpg"
+      class="w-full h-72 object-cover"/>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+  </div>
+
+  <div class="p-8">
+
+    <h3 class="text-3xl font-bold text-amber-400 mb-4">
+      Tank Bund
+    </h3>
+
+    <button
+      onclick="openModal(
+        'Tank Bund',
+        'https://thumbs.dreamstime.com/b/buddha-statue-situated-tank-bund-which-well-know-tourist-spot-hyderabad-artificial-lake-tankbund-225155727.jpg',
+        'Tank Bund is one of Hyderabad’s most popular tourist attractions located beside Hussain Sagar Lake. It is famous for boating activities, Buddha statue views, evening walks, food stalls, and beautiful nighttime city lights. The area becomes lively during festivals and weekends and remains one of Hyderabad’s favorite public destinations.',
+        'Open 24 Hours',
+        'Hussain Sagar, Hyderabad'
+      )"
+
+      class="hero-btn bg-gradient-to-r from-amber-400 to-orange-500 text-black px-6 py-3 rounded-xl font-bold mt-4">
+
+      View Details
+
+    </button>
+
+  </div>
+</div>
+
+        <!-- RAMOJI -->
+       <!-- RAMOJI FILM CITY -->
+<div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-4 transition duration-500">
+
+  <div class="relative overflow-hidden">
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ramoji_Film_City.jpg"
+      class="w-full h-72 object-cover"/>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+  </div>
+
+  <div class="p-8">
+
+    <h3 class="text-3xl font-bold text-amber-400 mb-4">
+      Ramoji Film City
+    </h3>
+
+    <button
+      onclick="openModal(
+        'Ramoji Film City',
+        'https://upload.wikimedia.org/wikipedia/commons/d/d1/Ramoji_Film_City.jpg',
+        'Ramoji Film City is one of the world’s largest integrated film studio complexes and one of Hyderabad’s biggest tourist attractions. Visitors can explore movie sets, gardens, adventure parks, entertainment zones, and live performances. The destination is especially popular among families, movie lovers, and tourists looking for a cinematic entertainment experience.',
+        '9:00 AM - 5:30 PM',
+        'Abdullapurmet, Hyderabad'
+      )"
+
+      class="hero-btn bg-gradient-to-r from-amber-400 to-orange-500 text-black px-6 py-3 rounded-xl font-bold mt-4">
+
+      View Details
+
+    </button>
+
+  </div>
+</div>
+
+        <!-- SALAR JUNG -->
+       <!-- SALAR JUNG MUSEUM -->
+<div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-4 transition duration-500">
+
+  <div class="relative overflow-hidden">
+
+    <img
+      src="https://www.tourmyindia.com/blog//wp-content/uploads/2018/04/849.jpg"
+      class="w-full h-72 object-cover"/>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+  </div>
+
+  <div class="p-8">
+
+    <h3 class="text-3xl font-bold text-amber-400 mb-4">
+      Salar Jung Museum
+    </h3>
+
+    <button
+      onclick="openModal(
+        'Salar Jung Museum',
+        'https://www.tourmyindia.com/blog//wp-content/uploads/2018/04/849.jpg',
+        'Salar Jung Museum contains one of India’s largest collections of historical artifacts, sculptures, clocks, paintings, manuscripts, antiques, and rare objects collected from different countries. The museum is one of Hyderabad’s most important cultural and educational tourist attractions and attracts visitors from across the world.',
+        '10:00 AM - 5:00 PM',
+        'Darulshifa, Hyderabad'
+      )"
+
+      class="hero-btn bg-gradient-to-r from-amber-400 to-orange-500 text-black px-6 py-3 rounded-xl font-bold mt-4">
+
+      View Details
+
+    </button>
+
+  </div>
+</div>
+
+        <!-- BIRLA MANDIR -->
+       
+              <!-- BIRLA MANDIR -->
+<div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-4 transition duration-500">
+
+  <div class="relative overflow-hidden">
+
+    <img
+      src="https://www.shutterstock.com/image-photo/birla-mandir-laxmi-narayan-temple-600nw-1550963552.jpg"
+      class="w-full h-72 object-cover"/>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+  </div>
+
+  <div class="p-8">
+
+    <h3 class="text-3xl font-bold text-amber-400 mb-4">
+      Birla Mandir
+    </h3>
+
+    <button
+      onclick="openModal(
+        'Birla Mandir',
+        'https://www.shutterstock.com/image-photo/birla-mandir-laxmi-narayan-temple-600nw-1550963552.jpg',
+        'Birla Mandir is one of Hyderabad’s most beautiful spiritual destinations built completely with white marble. Located on Naubat Pahad hill, the temple offers breathtaking panoramic city views, peaceful surroundings, and stunning South Indian architecture. It remains one of Hyderabad’s most visited religious attractions.',
+        '7:00 AM - 12:00 PM & 3:00 PM - 9:00 PM',
+        'Naubat Pahad, Hyderabad'
+      )"
+
+      class="hero-btn bg-gradient-to-r from-amber-400 to-orange-500 text-black px-6 py-3 rounded-xl font-bold mt-4">
+
+      View Details
+
+    </button>
+
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 px-6 bg-gradient-to-br from-zinc-900 to-black">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <img
+        src="https://thumbs.dreamstime.com/b/durgam-cheruvu-bridge-hitech-city-hyderabad-fourth-most-populous-sixth-urban-agglomeration-india-october-346543263.jpg"
+        class="rounded-3xl shadow-2xl h-full object-cover"/>
+
+      <div>
+
+        <h2 class="text-6xl font-bold text-amber-400 mb-8">
+          About Hyderabad
+        </h2>
+
+        <p class="text-lg text-gray-300 leading-9">
+
+          Hyderabad is one of India's most historic and rapidly growing cities.
+
+          Popularly called the "City of Pearls",
+          Hyderabad combines royal heritage with modern urban lifestyle.
+
+          The city is famous for Charminar, Golconda Fort,
+          Tank Bund, Ramoji Film City, Salar Jung Museum,
+          and Birla Mandir.
+
+          Hyderabad is also world-famous for biryani,
+          shopping markets, tourism experiences,
+          and architectural wonders.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section
+    id="contact"
+    class="py-24 bg-gradient-to-r from-indigo-950 via-zinc-900 to-black px-6">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+      <h2 class="text-6xl font-bold text-amber-400 mb-6">
+        Contact Us
+      </h2>
+
+      <p class="text-lg text-gray-300 mb-12">
+        Plan your Hyderabad journey with us.
+      </p>
+
+      <div class="place-card bg-zinc-900 border border-zinc-800 rounded-3xl p-10 shadow-2xl">
+
+        <div class="grid md:grid-cols-3 gap-10 text-center">
+
+          <div>
+
+            <div class="text-5xl mb-4">
+              📧
+            </div>
+
+            <h3 class="text-2xl font-bold text-amber-400 mb-3">
+              Email
+            </h3>
+
+            <a
+              href="mailto:contact@explorehyderabad.com"
+              class="text-blue-400 hover:underline text-lg">
+
+              contact@explorehyderabad.com
+            </a>
+          </div>
+
+          <div>
+
+            <div class="text-5xl mb-4">
+              📞
+            </div>
+
+            <h3 class="text-2xl font-bold text-amber-400 mb-3">
+              Phone
+            </h3>
+
+            <a
+              href="tel:+919876543210"
+              class="text-blue-400 hover:underline text-lg">
+
+              +91 98765 43210
+            </a>
+          </div>
+
+          <div>
+
+            <div class="text-5xl mb-4">
+              📍
+            </div>
+
+            <h3 class="text-2xl font-bold text-amber-400 mb-3">
+              Location
+            </h3>
+
+            <p class="text-gray-300 text-lg">
+              Hyderabad, Telangana, India
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+<script>
+
+const searchInput = document.getElementById('searchInput');
+
+const cards = document.querySelectorAll('.place-card');
+
+searchInput.addEventListener('keyup', () => {
+
+  const value = searchInput.value.toLowerCase();
+
+  cards.forEach(card => {
+
+    const text = card.innerText.toLowerCase();
+
+    if(text.includes(value)) {
+
+      card.style.display = 'block';
+
+    }
+
+    else {
+
+      card.style.display = 'none';
+
+    }
+
+  });
+
+});
+
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+  duration: 1200,
+  once: true
+});
+
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+  duration: 1200,
+  once: true
+});
+
+</script>
+
+<script>
+
+const toggleBtn = document.getElementById('themeToggle');
+
+toggleBtn.addEventListener('click', () => {
+
+  document.body.classList.toggle('light-mode');
+
+});
+
+</script>
+<script>
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+
+  let current = "";
+
+  sections.forEach(section => {
+
+    const sectionTop = section.offsetTop;
+
+    if (pageYOffset >= sectionTop - 200) {
+      current = section.getAttribute("id");
+    }
+
+  });
+
+  navLinks.forEach(link => {
+
+    link.classList.remove("active");
+
+    if(link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+
+  });
+
+});
+
+</script>
+<script>
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+
+  let current = "";
+
+  sections.forEach(section => {
+
+    const sectionTop = section.offsetTop;
+
+    if(pageYOffset >= sectionTop - 200) {
+      current = section.getAttribute("id");
+    }
+
+  });
+
+  navLinks.forEach(link => {
+
+    link.classList.remove("active");
+
+    if(link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+
+  });
+
+});
+
+</script>
+<!-- MODAL -->
+
+<div
+  id="placeModal"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-6">
+
+  <div class="bg-zinc-900 max-w-3xl w-full rounded-3xl overflow-hidden border border-zinc-700 shadow-2xl relative">
+
+    <button
+      onclick="closeModal()"
+      class="absolute top-4 right-4 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full text-xl">
+
+      ×
+
+    </button>
+
+    <img
+      id="modalImage"
+      src=""
+      class="w-full h-80 object-cover"/>
+
+    <div class="p-8">
+
+      <h2
+        id="modalTitle"
+        class="text-4xl font-bold text-amber-400 mb-4">
+      </h2>
+
+      <p
+        id="modalDescription"
+        class="text-gray-300 leading-8 mb-6">
+      </p>
+
+      <div class="space-y-3">
+
+        <p class="text-lg">
+          ⏰ <span id="modalTimings"></span>
+        </p>
+
+        <p class="text-lg">
+          📍 <span id="modalLocation"></span>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+
+function openModal(title, image, description, timings, location) {
+
+  document.getElementById('placeModal').classList.remove('hidden');
+  document.getElementById('placeModal').classList.add('flex');
+
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalImage').src = image;
+  document.getElementById('modalDescription').innerText = description;
+  document.getElementById('modalTimings').innerText = timings;
+  document.getElementById('modalLocation').innerText = location;
+}
+
+function closeModal() {
+
+  document.getElementById('placeModal').classList.add('hidden');
+  document.getElementById('placeModal').classList.remove('flex');
+}
+
+</script>
+<!-- MODAL -->
+
+<div
+  id="placeModal"
+  class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-6">
+
+  <div class="bg-zinc-900 max-w-3xl w-full rounded-3xl overflow-hidden border border-zinc-700 shadow-2xl relative">
+
+    <!-- Close Button -->
+
+    <button
+      onclick="closeModal()"
+      class="absolute top-4 right-4 bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full text-xl z-10">
+
+      ×
+
+    </button>
+
+    <!-- Image -->
+
+    <img
+      id="modalImage"
+      src=""
+      class="w-full h-80 object-cover"/>
+
+    <!-- Content -->
+
+    <div class="p-8">
+
+      <h2
+        id="modalTitle"
+        class="text-4xl font-bold text-amber-400 mb-4">
+      </h2>
+
+      <p
+        id="modalDescription"
+        class="text-gray-300 leading-8 mb-6">
+      </p>
+
+      <div class="space-y-3">
+
+        <p class="text-lg">
+          ⏰ <span id="modalTimings"></span>
+        </p>
+
+        <p class="text-lg">
+          📍 <span id="modalLocation"></span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<script>
+
+function openModal(title, image, description, timings, location) {
+
+  document.getElementById('placeModal').classList.remove('hidden');
+
+  document.getElementById('placeModal').classList.add('flex');
+
+  document.getElementById('modalTitle').innerText = title;
+
+  document.getElementById('modalImage').src = image;
+
+  document.getElementById('modalDescription').innerText = description;
+
+  document.getElementById('modalTimings').innerText = timings;
+
+  document.getElementById('modalLocation').innerText = location;
+}
+
+function closeModal() {
+
+  document.getElementById('placeModal').classList.add('hidden');
+
+  document.getElementById('placeModal').classList.remove('flex');
+}
+
+</script>
+<script>
+
+window.addEventListener("load", () => {
+
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+
+    loader.style.opacity = "0";
+
+    loader.style.transition = "0.6s";
+
+    setTimeout(() => {
+
+      loader.style.display = "none";
+
+    }, 600);
+
+  }, 1200);
+
+});
+
+</script>
+</body>
+</html>

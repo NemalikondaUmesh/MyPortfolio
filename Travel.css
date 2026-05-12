@@ -1,0 +1,247 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #09090b;
+  font-family: sans-serif;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f59e0b, #ea580c);
+  border-radius: 20px;
+}
+
+/* Navbar */
+
+/* Navbar Links */
+
+.nav-link {
+  color: #e5e7eb;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.nav-link:hover {
+  color: #fbbf24;
+}
+
+.nav-link::after {
+
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: #fbbf24;
+  transition: 0.4s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+
+.nav-link.active {
+  color: #fbbf24 !important;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Tourist Cards */
+
+.place-card {
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+.place-card:hover {
+
+  transform: translateY(-12px);
+
+  box-shadow:
+    0 0 25px rgba(251, 191, 36, 0.15),
+    0 0 60px rgba(251, 191, 36, 0.08);
+}
+
+.place-card img {
+  transition: 0.5s ease;
+}
+
+.place-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Hero Buttons */
+
+.hero-btn {
+  transition: 0.4s ease;
+  animation: floatBtn 3s ease-in-out infinite;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes floatBtn {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Glow Text */
+
+.glow-text {
+
+  text-shadow:
+    0 0 10px rgba(251, 191, 36, 0.6),
+    0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+/* Hero Animation */
+
+.hero-title {
+  animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Details */
+
+details {
+  transition: 0.4s ease;
+}
+
+details:hover {
+  background: #3f3f46;
+}
+
+/* LIGHT MODE */
+
+.light-mode {
+  background: #f4f4f5 !important;
+  color: black !important;
+}
+
+/* Navbar */
+
+.light-mode nav {
+  background: rgba(255,255,255,0.92) !important;
+  border-bottom: 1px solid #d4d4d8;
+}
+
+.light-mode nav a {
+  color: black !important;
+}
+
+/* Sections */
+
+.light-mode section {
+  background: #f4f4f5 !important;
+}
+
+/* About + Contact */
+
+.light-mode #about,
+.light-mode #contact {
+  background: #e4e4e7 !important;
+}
+
+/* Cards */
+
+.light-mode .place-card {
+  background: white !important;
+  border: 1px solid #d4d4d8 !important;
+  color: black !important;
+}
+
+.light-mode .place-card p {
+  color: #3f3f46 !important;
+}
+
+.light-mode .place-card details {
+  background: #f4f4f5 !important;
+}
+
+/* Text Fix */
+
+.light-mode p,
+.light-mode span,
+.light-mode a,
+.light-mode summary,
+.light-mode li {
+  color: #18181b !important;
+}
+
+.light-mode .text-white,
+.light-mode .text-gray-200,
+.light-mode .text-gray-300,
+.light-mode .text-gray-400 {
+  color: #18181b !important;
+}
+
+/* Titles */
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3 {
+  color: #f59e0b !important;
+}
+
+/* Buttons */
+
+.light-mode button,
+.light-mode .hero-btn {
+  color: black !important;
+}
+
+/* Footer */
+
+.light-mode footer {
+  background: white !important;
+  color: black !important;
+}
+/* Active Navbar Link */
+
+.nav-link.active {
+  color: #fbbf24 !important;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
