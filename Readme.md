@@ -1,31 +1,18 @@
-# Personal Portfolio Website
+# Nemalikonda Umesh – Developer Portfolio
 
-A modern and responsive personal portfolio website showcasing my skills, projects, certifications, education, and experience in web development and software engineering.
+A responsive Java Developer portfolio built with plain HTML and CSS.
 
-## 🚀 Features
+## Pages
+- `index.html` – portfolio homepage, skills, projects, experience, education and contact details.
+- `resume.html` – resume page with a download link to the latest supplied PDF.
+- `Travel.html` – standalone Hyderabad tourism website project.
 
-- Responsive recruiter-friendly UI
-- Modern dark theme design
-- Smooth navigation
-- Skills section
-- Experience section
-- Projects showcase
-- Certifications section
-- Education details
-- Contact and social links
-- Mobile responsive layout
+## Run locally
+Open `index.html` in a browser. No build step or package installation is required.
 
-## 🛠️ Technologies Used
+## Customize
+- Update links and contact details in `index.html` and `resume.html` if they change.
+- Replace `NEMALIKONDA UMESH.pdf` when a newer resume is available.
+- Edit `index.css` and `resume.css` to adjust the design.
 
-- HTML5
-- CSS3
-- JavaScript
-
-## 📂 Project Structure
-
-```bash
-portfolio/
-│── index.html
-│── style.css
-│── images/
-│── assets/
+The portfolio uses Google Fonts and Devicon-style artwork is not required; the project illustrations are created with CSS. An internet connection is only needed for the remote Google Fonts request and external GitHub links.

@@ -1,290 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Umesh Nemalikonda</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="./images/logo.jpg" type="image/png"/>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link href="index.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Nemalikonda Umesh, Java Developer focused on Core Java, Spring Boot, REST APIs and PostgreSQL.">
+  <meta name="theme-color" content="#080d19">
+  <title>Nemalikonda Umesh | Java Developer</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-
-<!-- Navbar -->
-<nav id="main-nav">
-  <div>
-    <a href="#home">Home</a>
-  </div>
-
-  <div>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-    <a href="resume.html" target="_blank">Resume</a>
-  </div>
-</nav>
-
-<!-- Header -->
-<header id="home">
-  <h1>Hi, I'm Nemalikonda Umesh</h1>
-
-  <p>Developer | Code Enthusiast | Student</p>
-
-  <p>
-    Final year B.Tech Student in Computer Science and Engineering with a solid
-    foundation in data structures, algorithms, Full Stack Development, Java,
-    and problem-solving. Proficient in programming concepts and low-level
-    design, with a strong passion for software development.
-  </p>
-</header>
-
-<!-- Skills -->
-<section id="skills">
-
-  <h2>Skills</h2>
-
-  <!-- Web Development -->
-  <h3 style="margin-top:2rem;color:#ffffff;">Web Development</h3>
-
-  <div class="skills-grid">
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>
-      <p>HTML</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"/>
-      <p>CSS</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
-      <p>React</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"/>
-      <p>Spring Boot</p>
-    </div>
-
-  </div>
-
-  <!-- Programming Languages -->
-  <h3 style="margin-top:2rem;color:#ffffff;">Programming Languages</h3>
-
-  <div class="skills-grid">
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/>
-      <p>Java</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"/>
-      <p>C</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
-      <p>Python</p>
-    </div>
-
-  </div>
-
-  <!-- ML -->
-  <h3 style="margin-top:2rem;color:#ffffff;">Machine Learning & Data Science</h3>
-
-  <div class="skills-grid">
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"/>
-      <p>PyTorch</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="Numpy"/>
-      <p>Numpy</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"/>
-      <p>Pandas</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://matplotlib.org/stable/_static/logo2.svg" alt="Matplotlib"/>
-      <p>Matplotlib</p>
-    </div>
-
-  </div>
-
-  <!-- Databases -->
-  <h3 style="margin-top:2rem;color:#ffffff;">Databases</h3>
-
-  <div class="skills-grid">
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
-      <p>SQL</p>
-    </div>
-
-    <div class="skill-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
-      <p>MongoDB</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- Projects -->
-<section id="projects">
-
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <div class="project">
-
-      <img src="https://t4.ftcdn.net/jpg/08/38/13/65/360_F_838136507_BIsszTucaIcQ9Zspd72Ji0dVPaOhGYjC.jpg" alt="Fire Accident Detection System"/>
-
-      <h3>
-        Fire Accident Detection System |
-        Python, OpenCV, TensorFlow, SQLite, SMTP
-      </h3>
-
-      <p>
-        Developed a real-time fire accident detection system using Python,
-        OpenCV, and TensorFlow to monitor video streams and detect fire and
-        smoke incidents. Implemented image preprocessing and CNN-based detection
-        techniques to improve detection accuracy and reduce false positives.
-        Integrated SMTP-based alert notifications for early emergency response
-        and used SQLite for storing detection logs and alert records.
-      </p>
-
-      <div class="project-btns">
-        <a href="https://github.com/NemalikondaUmesh/FIRE-ACCIDENT-DETECTOR" target="_blank">
-          View on GitHub
-        </a>
+  <div class="site-shell">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">U</span><span>Umesh<span class="brand-dot">.</span></span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="nav-resume" href="resume.html">Resume <span aria-hidden="true">↗</span></a>
       </div>
+    </nav>
 
-    </div>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> OPEN TO JAVA DEVELOPER OPPORTUNITIES</p>
+          <h1>Hi, I'm <span>Nemalikonda<br class="desktop-break"> Umesh.</span></h1>
+          <h2>Java Developer <i>·</i> Backend Development</h2>
+          <p class="hero-description">Computer Science graduate with hands-on experience building RESTful applications using Java, Spring Boot, Hibernate and PostgreSQL. I enjoy solving problems and developing reliable, maintainable software.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="resume.html">View resume <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta"><span>Hyderabad, India</span><span class="meta-separator">/</span><span>B.Tech CSE · 2022–2026</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Java developer profile illustration">
+          <div class="visual-glow"></div>
+          <div class="code-window">
+            <div class="window-bar"><span></span><span></span><span></span><small>developer.java</small></div>
+            <div class="code-lines" aria-hidden="true">
+              <p><b>public class</b> <em>Developer</em> {</p>
+              <p class="indent"><b>String</b> name = <i>"Umesh"</i>;</p>
+              <p class="indent"><b>String</b> focus = <i>"Java & Spring Boot"</i>;</p>
+              <p class="indent"><b>void</b> build() {</p>
+              <p class="indent double-indent">learn();</p>
+              <p class="indent double-indent">create();</p>
+              <p class="indent double-indent">improve();</p>
+              <p class="indent">}</p>
+              <p>}</p>
+            </div>
+            <div class="code-footer"><span class="pulse"></span> Building and learning</div>
+          </div>
+          <div class="floating-chip chip-java">☕ Java</div>
+          <div class="floating-chip chip-spring">✳ Spring Boot</div>
+          <div class="floating-chip chip-db">▤ PostgreSQL</div>
+        </div>
+      </section>
 
-    <!-- Project 2 -->
-    <div class="project">
+      <section class="section about-section" id="about">
+        <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Building useful things<br><span>with clean code.</span></h2></div>
+        <div class="about-content">
+          <p>I am a Computer Science graduate from Anurag University, Hyderabad. My technical foundation includes Java, object-oriented programming, data structures, algorithms and database management.</p>
+          <p>Through Java Full Stack training and project work, I have practiced developing backend services, integrating databases and testing REST APIs. I am looking for an entry-level opportunity where I can contribute, learn from experienced engineers and grow as a software developer.</p>
+          <div class="about-facts"><div><strong>8.36/10</strong><span>B.Tech CGPA</span></div><div><strong>6 months</strong><span>Java Full Stack training</span></div><div><strong>Aug 2025–Jan 2026</strong><span>Project Associate</span></div></div>
+        </div>
+      </section>
 
-      <img src="./pro.png" alt="Tourism Website"/>
+      <section class="section" id="skills">
+        <div class="section-heading centered"><p class="eyebrow">TECHNICAL TOOLKIT</p><h2>Skills & technologies</h2><p class="section-intro">Technologies and concepts listed in my current Java Developer resume.</p></div>
+        <div class="skill-groups">
+          <article class="skill-group"><div class="skill-icon">{ }</div><div><h3>Programming</h3><p>Java · Python · C</p></div></article>
+          <article class="skill-group"><div class="skill-icon">J</div><div><h3>Java & Backend</h3><p>Core Java · OOP · Collections · Exception Handling · JDBC · Servlets · Spring Core · Spring MVC · Spring Boot · Hibernate</p></div></article>
+          <article class="skill-group"><div class="skill-icon">▤</div><div><h3>Databases</h3><p>MySQL · PostgreSQL</p></div></article>
+          <article class="skill-group"><div class="skill-icon">⌘</div><div><h3>Web technologies</h3><p>HTML · CSS · JavaScript · React.js</p></div></article>
+          <article class="skill-group"><div class="skill-icon">⚙</div><div><h3>Tools</h3><p>Git · Linux · VS Code · Postman</p></div></article>
+          <article class="skill-group"><div class="skill-icon">◈</div><div><h3>Core CS</h3><p>Data Structures · Algorithms · DBMS</p></div></article>
+        </div>
+      </section>
 
-      <h3>
-        Tourism Website |
-        HTML, Tailwind CSS, JavaScript, AOS
-      </h3>
+      <section class="section projects-section" id="projects">
+        <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h2>Projects I've built</h2><p class="section-intro">My Java-focused projects come first, followed by additional work from my earlier portfolio.</p></div>
+        <div class="projects-grid">
+          <article class="project-card featured-project">
+            <div class="project-art art-job"><span class="art-label">01 / BACKEND</span><div class="dashboard-art"><div class="dash-top"><i></i><i></i><i></i></div><div class="dash-layout"><div class="dash-side"></div><div class="dash-main"><b></b><b></b><div class="dash-row"><i></i><i></i><i></i></div><div class="dash-lines"></div></div></div></div><span class="art-tech">JAVA · SPRING BOOT</span></div>
+            <div class="project-body"><div class="project-topline"><span class="project-type">FEATURED PROJECT</span><span class="project-number">01</span></div><h3>JobTracker – Career Management Platform</h3><p>Full-stack job management application for managing job opportunities, candidate records and job applications. Built REST APIs for registration, CRUD operations and application status tracking.</p><div class="tag-list"><span>Java 17</span><span>Spring Boot</span><span>Hibernate</span><span>PostgreSQL</span><span>REST APIs</span></div><a class="text-link" href="https://github.com/NemalikondaUmesh?tab=repositories" target="_blank" rel="noopener noreferrer">Find project on GitHub <span>↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-zepto"><span class="art-label">02 / FRONTEND</span><div class="grocery-art"><div class="grocery-head">quick<span>cart</span></div><div class="grocery-products"><i>🥑</i><i>🥛</i><i>🍓</i><i>🍞</i></div><div class="grocery-bar"></div><div class="grocery-bar short"></div></div><span class="art-tech">HTML · CSS · JAVASCRIPT</span></div>
+            <div class="project-body"><div class="project-topline"><span class="project-type">WEB APPLICATION</span><span class="project-number">02</span></div><h3>Zepto Clone</h3><p>Responsive grocery shopping interface using the DummyJSON REST API. Includes product search, category filters, cart quantity management, wishlist persistence and browser geolocation.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span><span>LocalStorage</span></div><a class="text-link" href="https://github.com/NemalikondaUmesh/Zepto-Clone" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-fire"><span class="art-label">03 / COMPUTER VISION</span><div class="fire-symbol">◉</div><div class="fire-scan"></div><span class="art-tech">PYTHON · OPENCV · TENSORFLOW</span></div>
+            <div class="project-body"><div class="project-topline"><span class="project-type">ADDITIONAL PROJECT</span><span class="project-number">03</span></div><h3>Fire Accident Detection System</h3><p>Real-time fire and smoke detection from video streams using Python, OpenCV and a CNN-based TensorFlow pipeline. Uses SMTP for alert notifications and SQLite to store detection logs and alert history.</p><div class="tag-list"><span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>SQLite</span><span>SMTP</span></div><a class="text-link" href="https://github.com/NemalikondaUmesh/FIRE-ACCIDENT-DETECTOR" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-travel"><span class="art-label">04 / WEB DESIGN</span><div class="travel-art"><span>HYDERABAD</span><b>Explore<br>the city.</b><i>✦</i></div><span class="art-tech">HTML · TAILWIND CSS · JS</span></div>
+            <div class="project-body"><div class="project-topline"><span class="project-type">ADDITIONAL PROJECT</span><span class="project-number">04</span></div><h3>Hyderabad Tourism Website</h3><p>Responsive tourism website highlighting Hyderabad attractions, including Charminar, Golconda Fort, Tank Bund and Salar Jung Museum. Includes dark/light theme switching, animations and destination sections.</p><div class="tag-list"><span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span><span>AOS</span></div><a class="text-link" href="https://github.com/NemalikondaUmesh/Tourist-website" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div>
+          </article>
+        </div>
+      </section>
 
-      <p>
-        Developed a modern and responsive tourism website showcasing famous
-        tourist attractions in Hyderabad including Charminar, Golconda Fort,
-        Tank Bund, Ramoji Film City, Salar Jung Museum, and Birla Mandir.
-        Implemented dark/light theme toggle, animations, responsive UI,
-        and dynamic content sections for better user experience.
-      </p>
+      <section class="section experience-section" id="experience">
+        <div class="section-heading"><p class="eyebrow">PROFESSIONAL EXPERIENCE</p><h2>Where I've worked</h2></div>
+        <article class="experience-card"><div class="experience-date">AUG 2025 — JAN 2026</div><div class="experience-main"><h3>Web Development Project Associate</h3><p class="company">Indian Skill Pharma Tech Consulting (ISPTC) <span>· Hyderabad</span></p><ul><li>Developed responsive web application interfaces using HTML, CSS and JavaScript.</li><li>Implemented interactive frontend components and refined UI elements to improve application usability.</li><li>Applied responsive design techniques to support different screen sizes and devices.</li><li>Collaborated on frontend development tasks and contributed to functional web interfaces.</li></ul></div></article>
+      </section>
 
-      <div class="project-btns">
-        <a href="https://github.com/NemalikondaUmesh/Tourist-website" target="_blank">
-          View on GitHub
-        </a>
-      </div>
+      <section class="section education-section" id="education">
+        <div class="section-heading"><p class="eyebrow">ACADEMIC BACKGROUND</p><h2>Education & training</h2></div>
+        <div class="education-list">
+          <article class="education-item"><div class="education-year">2022 — 2026</div><div><h3>Bachelor of Technology · Computer Science and Engineering</h3><p>Anurag University, Hyderabad</p></div><strong>8.36 / 10</strong></article>
+          <article class="education-item"><div class="education-year">2020 — 2022</div><div><h3>Intermediate</h3><p>Telangana State Residential College, Khammam</p></div><strong>95.0%</strong></article>
+          <article class="education-item"><div class="education-year">2019 — 2020</div><div><h3>SSC</h3><p>Telangana State Residential School, Khammam</p></div><strong>10 / 10</strong></article>
+        </div>
+        <div class="training-card"><div class="training-mark">Q</div><div><p class="eyebrow">PROFESSIONAL TRAINING · 6 MONTHS</p><h3>Java Full Stack Development</h3><p>QSpiders Training Institute · Core Java, OOP, SQL, database management, frontend technologies and backend development concepts.</p></div></div>
+      </section>
 
-    </div>
-
+      <section class="contact-section" id="contact">
+        <p class="eyebrow">LET'S CONNECT</p><h2>Ready to build<br><span>something useful?</span></h2><p>I'm looking for entry-level Java Developer opportunities. If you have a suitable role or want to discuss my projects, feel free to reach out.</p>
+        <a class="button button-primary contact-email" href="mailto:umeshkumarnemalikonda@gmail.com">umeshkumarnemalikonda@gmail.com <span>↗</span></a>
+        <div class="social-links"><a href="https://github.com/NemalikondaUmesh" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/nemalikonda-umesh/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://leetcode.com/u/Umeshnemalikonda/" target="_blank" rel="noopener noreferrer">LeetCode ↗</a><a href="https://www.hackerrank.com/profile/22eg105n39" target="_blank" rel="noopener noreferrer">HackerRank ↗</a></div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#home"><span class="brand-mark">U</span><span>Umesh<span class="brand-dot">.</span></span></a><p>© 2026 Nemalikonda Umesh. Built with HTML, CSS and JavaScript.</p><a href="#home">Back to top ↑</a></footer>
   </div>
-
-</section>
-
-<!-- Education -->
-<section id="education">
-
-  <h2>Education</h2>
-
-  <div class="education-grid">
-
-    <div class="edu-box">
-      <h3>B.Tech in Computer Science and Engineering</h3>
-      <p>Anurag University, 2022 - 2026</p>
-      <p><strong>CGPA:</strong> 8.2</p>
-    </div>
-
-    <div class="edu-box">
-      <h3>Intermediate (MPC)</h3>
-      <p>Telangana State Residential College, 2020 - 2022</p>
-      <p><strong>Percentage:</strong> 95%</p>
-    </div>
-
-    <div class="edu-box">
-      <h3>SSC (Class X)</h3>
-      <p>Telangana State Residential School, 2019 - 2020</p>
-      <p><strong>GPA:</strong> 10</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- Contact -->
-<section id="contact">
-
-  <h2>Contact Me</h2>
-
-  <p style="text-align:center;">
-    Email:
-    <a href="mailto:umeshkumarnemalikonda@gmail.com">
-      umeshkumarnemalikonda@gmail.com
-    </a>
-
-    <br>
-
-    Phone: +91-6281689287
-  </p>
-
-  <div class="socials">
-
-    <a href="https://github.com/NemalikondaUmesh" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
-      <p>GitHub</p>
-    </a>
-
-    <a href="https://www.linkedin.com/in/nemalikonda-umesh/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30" alt="LinkedIn"/>
-      <p>LinkedIn</p>
-    </a>
-
-    <a href="https://leetcode.com/u/Umeshnemalikonda/" target="_blank">
-      <img src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png" width="30" alt="LeetCode"/>
-      <p>LeetCode</p>
-    </a>
-
-    <a href="https://www.hackerrank.com/profile/22eg105n39" target="_blank">
-      <img src="https://cdn.iconscout.com/icon/free/png-256/hackerrank-3628885-3030009.png" width="30" alt="HackerRank"/>
-      <p>HackerRank</p>
-    </a>
-
-  </div>
-
-</section>
-
-<!-- Footer -->
-<footer>
-  &copy; 2026 Nemalikonda Umesh. All rights reserved.
-</footer>
-
 </body>
 </html>
